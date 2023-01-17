@@ -1,160 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-    
-</head>
-<body>
-   
-    <header>
-        <img id="start" src="./images/logo.jpg" alt="my web logo" width="100px" height="100px">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="contact.css">
+       
+    </head>
+    <body>
+       
+        <header>
 
-        <nav>
-
-        <a href="../index.html">HOME</a>|
-        <a href="about.html">ABOUT</a>|
-        <a href="contact.html">CONTACTS</a>|
-        <a href="services.html">SERVICES</a>|
-        <a href="login.html">LOG IN</a>|
-        <a href="maintenance.html">SIGN UP</a>|
-
-        <ul>
-            <li><a href="rental.html">RENTAL</a></li>
-            <li><a href="forsale.html">FOR SALE</a></li>
-        </ul>
-        <input type="text" placeholder="Search.."  title="search" id="search"> <label for="search">search</label>
-            
-        </nav>
+            <div class= "big-back">
+                
+                <div class= "logo">
+                    <img src="./images/logo.jpg" class= "big-back--logo" alt="Home logo" >
+                </div>
+                <div class= "BMD">BMDsales</div>
         
+                <nav class= "first-six navigator">
+                    <input type="checkbox" id="check">
+            <label for="check" class= "checkbt"> <p>drop down menu</p>
+            <svg width="27px" height="28px">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            </svg>
+            </label>
+        
+                
+                    
+                  <ul class= "firt-six__unordered-list">
+                      <li class= "firt-six__list-item"><a class= "first-six--link" href="../index.html">HOME</a>|</li>
+                      <li class= "firt-six__list-item"><a class= "first-six--link" href="about.html">ABOUT</a>|</li>
+                      <li class= "firt-six__list-item"><a class= "first-six--link" href="contact.html">CONTACTS</a></li>
+                      <li class= "firt-six__list-item"><a class= "first-six--link" href="services.html">SERVICES</a>|</li>
+                      <li class= "firt-six__list-item"><a class= "first-six--link" href="login.html">LOG IN</a>|</li>
+                      <li class= "firt-six__list-item"><a class= "first-six--link" href="maintenance.html">SIGN UP</a>|</li>
+                  </ul>
+              </nav>
+        
+        
+                <div class= "live-in">
+            
+                  <h1 class= "live-in--heading">CONTACTS</h1>
+               
+                </div>       
+            </div>
+           
     </header>
-    <hr>
+    
     <main>
+        <div class= "first_para">
         <p> We assist sellers in finding the ideal buyer, buyers in finding the ideal house, and agents & brokers in gaining the web visibility they want to effectively market properties.
 
             We work hard to be easy to get in touch with if you have any questions or would like to provide feedback. You are welcome to contact us by email at any time or by phone during regular business hours. Please get in touch with us using the most appropriate method listed below.</p>
+        </div>
+        <div class= "reach-us-and-form">
+                <div class= "reachus-div">
+                    <h1 class= "reach-us-and-form__reachus-div--heading">Reach Us</h1>
+                    
+                    <article>
+                    <p class ="reach-us-and-form__reachus-div--paragraph">We are ready to help!!!!</p>
+                    <p class= "reach-us-and-form__reachus-div--paragraph">You can contact us through: <br> phone, email, facebook, instagram and twitter</p>
+                    </article>
 
-        <div>
-            <h1>Reach Us</h1>
-            
-            <article>
-            <p>We are ready to help</p>
-            <p>You can contact us through phone, gmail, facebook, instagram and twitter</p>
-            </article>
+                </div>
 
+                <div class= "fillform_div">
+                    <form class= "input_fields" name="myForm" onsubmit="return(validate())">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
         </div>
 
-        <div>
-            <form>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-
-        <div>
-            <h1>Head Quarters</h1>
-            <p>Ethiopia, Addis Ababa</p>
+        <div class= "head-quarter">
+            <h1 class= "head-quarter--heading">Head Quarters</h1>
+            <p class= "head-quarter--paragraph" >Ethiopia, Addis Ababa</p>
             <ul>
-                <li><img src="./images/phone.jpg" alt="phone logo"> +251 5675 65443</li>
+                <li class= "head-quarter--listitem"><a href="#">bilenmehalek7@gmail.com</a> </li>
+                <li class= "head-quarter--listitem">+251 5675 65443</li>
                 
-                <li><img src="./images/email.jpg" alt="email logo"> <a href="#">bilenmehalek7@gmail.com</a> </li>
                 
         
             </ul>
 
         </div>
 
-        <div>
+    <div class= "local-offices">
             <h1>Local Offices</h1>
-            <img src="./images/office 1.jpeg" alt="our local office">
-            <article><P> Hawassa, BMD Building 2 <sup>nd</sup> floor</P></article>
-            <ul>
-                <li><img src="./images/phone.jpg" alt="phone logo"> +251 5675 65443</li>
-                
-                <li><img src="./images/email.jpg" alt="email logo"> <a href="#">bilenmehalek7@gmail.com</a> </li>
-                
-                
-            </ul>
+    </div>
+    
+    <div  class= "bottom-all">
+        
+
+        <div class= "bottom-all__hawassa">
+            <h1 class= "bottom-all__hawassa--heading">HAWASSA</h1>
+            <P class= "bottom-all__hawassa--paragraph"> Hawassa, BMD Building 2 <sup>nd</sup> floor</P>
+            <img class= "bottom-all__hawassa--office1" src="./images/office 1.jpeg" alt="our local office">
+            
             
         </div>
 
-        <div>
-            <video controls src="./video/vid 2.mp4">
+        <div class= "bottom-all__diredawa">
+            <h1>DIRE DAWA</h1>
+            <p class= "bottom-all__diredawa--paragraph">Dire Dawa and Harari, BMD Building</p>
+            <img class= "bottom-all__hawassa--office2" src="./images/office 2.jpeg" alt="Local office at Dire">
+            
+        </div>
+    </div>
+
+    <div class= "video_and_audio">
+        <div class= "vid-aud-div" >
+            <video class= "vid-aud-div--video2" controls src="./video/vid 2.mp4">
             <track src="./vtt/web2.vtt" kind="captions" srclang="en" label="English" default >
             </video>
             
-        <audio controls>
+        <audio class= "vid-aud-div--audio" controls>
          <source src="./audio/dave bird.wav" type="audio/mp3">
          <track src="./vtt/web3.vtt" kind="captions" srclang="en" label="english_captions">
          
         </audio>
-        <details>
-            <summary>Transcript</summary>
-            <p>Baby bird singing in the jungle.</p>
-        </details>
+        
   
         </div>
-
-        <div>
-            <p>Dire Dawa and Harari</p>
-            <ul>
-                <li><img src="./images/phone.jpg" alt="phone logo"> +251 5675 65443</li>
-                
-                <li><img src="./images/email.jpg" alt="email logo"> <a href="#">bilenmehalek7@gmail.com</a> </li>
-                
-            </ul>
-            <img src="./images/office 2.jpeg" alt="Local office at Dire">
-        </div>
-
+    </div>
 
     </main>
 
 
-    <footer>
+    <footer class= "footer">
    
+        <div class= "footer-big-div">
+            <div class= "bottom_logo">
+                <img src="./images/logo.jpg" alt="House logo" class= "footer-big-div--bottom-logo" >
+        
+            </div>    
+            
+            
+            <div class= "social-media">
+                
+                <p >Follow us on</p>
+    
+                <ul >
+    
+                    <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/facebook.jpg" alt="facebook logo"></li>
+                    <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/twitter.jpg" alt="twitter logo"> </li>
+                    <li class= "social-media--list-item"><img class= "social-media--logo" src= "./images/Instagram.jpg" alt="Instagram logo"></li>
+                </ul>
+                
+            </div>
+            
+        
+            <div class= "contacts">
+            
+                <p class= "other">Find us</p>
+                
+                <ul> 
+                    <li class= "contacts--list-item"><a class= "phoneA" href="#">+251 5675 4534</a></li>
+                    <li class= "contacts--list-item"><a class= "emaillogoA" href="#">bmd7@gmail.com</a> </li>
+                    
+                </ul>
+            </div>
+            
+             
+             <div class= "footer__end-navigators">
+    
+                    <a href="home.html#logo">GO TOP</a>|
+                    <a href="about.html">About</a>|
+                    <a href="contact.html">Help</a>|
+                    
+                    <div><p class= "endpara">&copy 2023 BMDsales</p></div>
+            </div>
+    
+            </div>
+    </footer>
 
         
-        <img src="./images/logo.jpg" alt="House logo" width="100px" height="100px">
-        
-        <div>
-            <p>Follow us on</p>
-        <ul>
-            <li><img src="./images/facebook.jpg" alt="facebook logo"> <a href="#">Facebook</a></li>
-            <li><img src="./images/twitter.jpg" alt="twitter logo"> <a href="#">Twitter</a></li>
-            <li><img src="./images/Instagram.jpg" alt="Instagram logo"> <a href="#">Instagram</a></li>
-        
-        </ul>
-        
-        </div>
-         <div>
-        
-            <p>Find us</p>
-            <p>Contacts</p>
-            <ul>
-                <li><img src="./images/phone.jpg" alt="phone logo"> +251 5675 65443</li>
-                
-                <li><img src="./images/email.jpg" alt="email logo"> <a href="#">bilenmehalek7@gmail.com</a> </li>
-                
-            </ul>
-         </div>
-        
-         <hr>
-         <div>
-         <a href="contact.html#start">GO TOP</a>|
-         <a href="about.html">About</a>|
-         <a href="contact.html">Help</a>|
-         </div>
-         <div><p>&copy 2023 BMD home sales an rentals</p></div>
-        
-    </footer>
-        
-        
+     <script src="contact.js"></script>   
 </body>
 </html>
