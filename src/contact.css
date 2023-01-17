@@ -466,10 +466,12 @@
     .live-in--paragraph{
         font-size: 10px;
     } 
-    .footer-big-div--bottom-logoottom_logo{
+    .footer-big-div--bottom-logo{
    
-        width: 50px;
-        height: 50px;
+        display: none;
+    }
+    .footer-big-div{
+        height: 180px;
     }
     .social-media{
     
@@ -482,6 +484,15 @@
     }
     .live-in--heading{
         font-size: 30px;
+    }
+    .first_para{
+        font-size: 14px;
+    }
+    .reach-us-and-form__reachus-div--heading{
+        font-size: 16px;
+    }
+    .reach-us-and-form__reachus-div--paragraph{
+        font-size: 12px;
     }
 
 }
