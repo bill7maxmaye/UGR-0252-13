@@ -226,6 +226,8 @@
 
 /* @media only screen and (min-width: 1000px){} */
 
+
+
 .navigator input, .navigator label p{
     display: none;
 }
@@ -252,12 +254,15 @@
         font-size: large;
         
     }
-    
     .footer-big-div--bottom-logo{
    
-        width: 90px;
-        height: 90px;
+        display: none;
     }
+    .footer-big-div{
+        height: 180px;
+    }
+    
+   
 }
 @media (max-width: 725px) {
     .live-in--heading{
@@ -372,7 +377,7 @@
         width: 50px;
         height: 50px;
     }
-    .social_media{
+    .social-media{
     
         font-size: smaller;
     }
@@ -403,9 +408,7 @@
         font-size: 8px;
        
     }
-    /* .other{
-        font-size: 8px;
-    } */
+    
 
     .social-media--logo{
         width: 15px;
@@ -418,7 +421,7 @@
     .live-in--paragraph{
         font-size: 8px;
     } 
-    big-back--logo{
+    .big-back--logo{
         width: 30px;
         height: 30px;
     }
