@@ -4,116 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="maintenance.css">
+   
 </head>
 <body>
-    
+   
     <header>
-        <img src="./images/logo.jpg" id="start" alt="" width="100px" height="100px">
 
-        <nav>
-
-        <a href="../index.html">HOME</a>|
-        <a href="about.html">ABOUT</a>|
-        <a href="contact.html">CONTACTS</a>|
-        <a href="services.html">SERVICES</a>|
-        <a href="login.html">LOG IN</a>|
-        <a href="maintenance.html">SIGN UP</a>|
-
-        <ul>
-            <li><a href="rental.html">RENTAL</a></li>
-            <li><a href="forsale.html">FOR SALE</a></li>
-        </ul>
-        <input type="text" placeholder="Search.." title="search" id="search"><label for="search">search</label>
+        <div class= "big-back">
             
-        </nav>
+            <div class= "logo">
+                <img src="./images/logo.jpg" class= "big-back--logo" alt="Home logo" >
+            </div>
+            <div class= "BMD">BMDsales</div>
+    
+    <nav class= "first-six navigator">
+                <input type="checkbox" id="check">
+        <label for="check" class= "checkbt"> <p>drop down menu</p>
+        <svg width="27px" height="28px">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+        </label>
+    
+            
+                
+              <ul class= "firt-six__unordered-list">
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="../index.html">HOME</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="about.html">ABOUT</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="contact.html">CONTACTS</a></li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="services.html">SERVICES</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="login.html">LOG IN</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="maintenance.html">SIGN UP</a>|</li>
+              </ul>
+          </nav>
+    
+    
+            <div class= "live-in">
         
-    </header>
+              <h1 class= "live-in--heading">MAINTENANCE</h1>
+           
+            </div>       
+        </div>
+       
+</header>
 
     <hr>
-
-    <main>
-        <article>
-        <h1>Our Mission</h1>
-        <h2>We're here to empower you by making everything about your house easy.</h2>   
-        <p>BMD Group is committed to ensuring easy and enjoyable journey for those who seek an exceptional home and life a <em>reality</em>. We are continuously working to improve the accessibility and experience for everyone, and we welcome feedback and accommodation requests. If you wish to report an issue or seek an accommodation, please let us know at any time. <a href="contact.html">contacts</a></p>
-       
-
-        </article>
-
-        <div>
-            <img src="./images/about 1.jpg" alt="Family enjoying in their new home">
-            <img src="./images/about 2.jpg" alt="Welcome message to customers ">
+    
+<main>
+        <div class= "container">
+            <div class= "container__common div1">
+            
+                <h2 class= "container--heading">ELECTRICITY</h2>
+                <P  class= "container--paragraph">If you find any electricity failure in your home <br> call our maintenance team </P>
+                <img class= "container--photos" src="./images/electricity 1.jpg" alt="electricity one">
+                <img class= "container--photos" src="./images/electricity 2.jpg" alt="electricity two">
+                
+            </div>
+            
 
             
-        </div>
 
-        <div>
-            <h1>Why Choose Us?</h1>
-            <p>BMD home sales and rentals, for years, millions of people looking to buy a home have used BMD homes.com to find it. BMD homes.com provides a comprehensive list of homes for sale and rentals along with the knowledge and resources needed to make wise real estate decisions. BMD homes.com is The Home of Home Search now more than ever.
-                
-            </p>
-        </div>
 
-        <div>
-            <video controls>
+            <div class= "container__common div2">
+                <h2 class= "container--heading">DRAINAGE</h2>
+                <P  class= "container--paragraph">If you find any drainage problem in your home <br> call our maintenance team </P>
+                <img class= "container--photos"src="./images/drainage 2.jpg" alt="Drainage 2">
+                <img class= "container--photos"src="./images/drainage 1.jpg" alt="Drainage 1">
+            
+            </div>
 
-               <source src="./video/vid 1.mp4" type="video/mp4">
-               <track src="./vtt/web1.vtt" kind="captions" srclang="en" label="English" default>
-            </video>
-        </div>
-
-        <div>
-            <img src="./images/about 3.jpg" alt="Beautiful home">
-            <h2>Buy your dream home at the right price</h2>
-        </div>
-        <div><p></p></div>
-        <div>
-            <img src="./images/about 4.jpg" alt="Amazing home design">
-        </div>
         
-    </main>
 
+
+            <div class= "container__common div3">
+                <h2 class= "container--heading">DOORS AND WINDOW</h2>
+                <P  class= "container--paragraph">If you find any problem with your doors and windows <br> call our maintenance team </P>
+                <img class= "container--photos" src="./images/door 1.jpg" alt="Door">
+                <img class= "container--photos" src="./images/window 1.jpg" alt="Window">
+                
+           </div>
+    </div>
+        
+
+        
+
+
+</main>
 
     
-    <footer>
+<footer class= "footer">
    
+    <div class= "footer-big-div">
+        <div class= "bottom_logo">
+            <img src="./images/logo.jpg" alt="House logo" class= "footer-big-div--bottom-logo" >
+    
+        </div>    
+        
+        
+        <div class= "social-media">
+            
+            <p >Follow us on</p>
 
-        
-        <img src="./images/logo.jpg" alt="House logo" width="100px" height="100px">
-        
-        <div>
-            <p>Follow us on</p>
-        <ul>
-            <li><img src="./images/facebook.jpg" alt="facebook logo "> <a href="#">Facebook</a></li>
-            <li><img src="./images/twitter.jpg" alt="twitter logo "> <a href="#">Twitter</a></li>
-            <li><img src="./images/Instagram.jpg" alt="Instagram logo"> <a href="#">Instagram</a></li>
-        
-        </ul>
-        
+            <ul >
+
+                <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/facebook.jpg" alt="facebook logo"></li>
+                <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/twitter.jpg" alt="twitter logo"> </li>
+                <li class= "social-media--list-item"><img class= "social-media--logo" src= "./images/Instagram.jpg" alt="Instagram logo"></li>
+            </ul>
+            
         </div>
-         <div>
         
-            <p>Find us</p>
-            <p>Contacts</p>
-            <ul>
-                <li><img src="./images/phone.jpg" alt="phone logo"> +251 5675 65443</li>
-                
-                <li><img src="./images/email.jpg" alt="email logo"> <a href="#">bilenmehalek7@gmail.com</a> </li>
+    
+        <div class= "contacts">
+        
+            <p class= "other">Find us</p>
+            
+            <ul> 
+                <li class= "contacts--list-item"><a class= "phoneA" href="#">+251 5675 4534</a></li>
+                <li class= "contacts--list-item"><a class= "emaillogoA" href="#">bmd7@gmail.com</a> </li>
                 
             </ul>
-         </div>
+        </div>
         
-         <hr>
-         <div>
-         <a href="about.html#start">GO TOP</a>|
-         <a href="about.html">About</a>|
-         <a href="contact.html">Help</a>|
-         </div>
-         <div><p>&copy 2023 BMD home sales an rentals</p></div>
-        
-    </footer>
-    
+         
+         <div class= "footer__end-navigators">
+
+                <a href="home.html#logo">GO TOP</a>|
+                <a href="about.html">About</a>|
+                <a href="contact.html">Help</a>|
+                
+                <div><p class= "endpara">&copy 2023 BMDsales</p></div>
+        </div>
+
+        </div>
+</footer>
 </body>
 </html>
