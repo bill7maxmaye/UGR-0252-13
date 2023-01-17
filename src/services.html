@@ -5,63 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="stylesheet" href="services.css">
     
 </head>
 <body>
     <header>
-        <img src="./images/logo.jpg" id="start" alt="My Home Logo" width="100px" height="100px">
 
-        <nav>
-
-        <a href="home.html">HOME</a>|
-        <a href="about.html">ABOUT</a>|
-        <a href="contact.html">CONTACTS</a>|
-        <a href="services.html">SERVICES</a>|
-        <a href="login.html">LOG IN</a>|
-        <a href="maintenance.html">SIGN UP</a>|
-
-        <ul>
-            <li><a href="rental.html">RENTAL</a></li>
-            <li><a href="forsale.html">FOR SALE</a></li>
-        </ul>
-        <label for="search">search</label>
-        <input type="text" placeholder="Search.." id="search">
+        <div class= "big-back">
             
-        </nav>
+            <div class= "logo">
+                <img src="./images/logo.jpg" class= "big-back--logo" alt="Home logo" >
+            </div>
+            <div class= "BMD">BMDsales</div>
+    
+            <nav class= "first-six navigator">
+                <input type="checkbox" id="check">
+        <label for="check" class= "checkbt"> <p>drop down menu</p>
+        <svg width="27px" height="28px">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+        </label>
+    
+            
+                
+              <ul class= "firt-six__unordered-list">
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="home.html">HOME</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="about.html">ABOUT</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="contact.html">CONTACTS</a></li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="services.html">SERVICES</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="login.html">LOG IN</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="maintenance.html">SIGN UP</a>|</li>
+              </ul>
+          </nav>
+    
+    
+            <div class= "live-in">
         
-    </header>
+              <h1 class= "live-in--heading">SERVICES</h1>
+           
+            </div>       
+        </div>
+       
+</header>
 
     <hr>
     
     <main>
-        <div><a href="rental.html"><h1>RENTAL</h1></a> </div>
-        <div><img src="./images/service.jpg" alt="Service"></div>
-        <div><a href="forsale.html"><h1> FOR SALE</h1></a> </div>
-        <div><a href="maintenance.html"><h1>MAINTENANCE</h1></a> </div>
+        
+        <div class= "second-background">
+           
+            <div class= "second-background__containers"><a class= "second-background--links" href="rental.html">RENTAL</a> </div>
+            <div class= "second-background__containers"><a class= "second-background--links" href="forsale.html"> FOR SALE</a> </div>
+            <div class= "second-background__containers"><a class= "second-background--links" href="maintenance.html">MAINTENANCE</a> </div>
+        </div>
+        
+        
 
-        <div>
-            <div><h2>More Ads</h2></div>
-        <table>
-            <tr>
+        
+            <div class= "more-ads"><h2>More Ads</h2></div>
+        <table  class= "table" >
+              <thead class= "table__head">
                 <th>Maintenance</th>
-                <th>Date</th>
+                <th>Service days</th>
                 <th>Minimum Price</th>
+              </thead>
+              <tbody>
+              <tr> 
+                <td class= "table--table-data">Doors and windows</td>
+                <td class= "table--table-data">Monday and Friday</td>
+                <td class= "table--table-data">500 Birr</td>
               </tr>
               <tr>
-                <td>Doors and windows</td>
-                <td>Monday and Friday</td>
-                <td>500 Birr</td>
+                <td class= "table--table-data">Electricity</td>
+                <td class= "table--table-data">Tuesday and Saturday</td>
+                <td class= "table--table-data">700 Birr</td>
               </tr>
               <tr>
-                <td>Electricity</td>
-                <td>Tuesday and Saturday</td>
-                <td>500 Birr</td>
+                <td class= "table--table-data">Drainage</td>
+                <td class= "table--table-data">Wednesday and Thursday</td>
+                <td class= "table--table-data">900 Birr</td>
               </tr>
-              <tr>
-                <td>Drainage</td>
-                <td>Wednesday and Thursday</td>
-                <td>500 Birr</td>
-              </tr>
+             </tbody>
         
         </table>
             
@@ -70,44 +96,52 @@
 
     </main>
 
-    
-    <footer>
    
-
+    <footer class= "footer">
+   
+        <div class= "footer-big-div">
+            <div class= "bottom_logo">
+                <img src="./images/logo.jpg" alt="House logo" class= "footer-big-div--bottom-logo" >
         
-        <img src="./images/logo.jpg" alt="House logo" width="100px" height="100px">
-        
-        <div>
-            <p>Follow us on</p>
-        <ul>
-            <li><img src="./images/facebook.jpg" alt="facebook logo"> <a href="#">Facebook</a></li>
-            <li><img src="./images/twitter.jpg" alt="twitter logo"> <a href="#">Twitter</a></li>
-            <li><img src="./images/Instagram.jpg" alt="Instagram logo"> <a href="#">Instagram</a></li>
-        
-        </ul>
-        
-        </div>
-         <div>
-        
-            <p>Find us</p>
-            <p>Contacts</p>
-            <ul>
-                <li><img src="./images/phone.jpg" alt="phone logo"> +251 5675 65443</li>
+            </div>    
+            
+            
+            <div class= "social-media">
                 
-                <li><img src="./images/email.jpg" alt="email logo"> <a href="#">bilenmehalek7@gmail.com</a> </li>
+                <p >Follow us on</p>
+    
+                <ul >
+    
+                    <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/facebook.jpg" alt="facebook logo"></li>
+                    <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/twitter.jpg" alt="twitter logo"> </li>
+                    <li class= "social-media--list-item"><img class= "social-media--logo" src= "./images/Instagram.jpg" alt="Instagram logo"></li>
+                </ul>
                 
-            </ul>
-         </div>
+            </div>
+            
         
-         <hr>
-         <div>
-         <a href="service.html#start">GO TOP</a>|
-         <a href="about.html">About</a>|
-         <a href="contact.html">Help</a>|
-         </div>
-         <div><p>&copy 2023 BMD home sales an rentals</p></div>
-        
+            <div class= "contacts">
+            
+                <p class= "other">Find us</p>
+                
+                <ul> 
+                    <li class= "contacts--list-item"><a class= "phoneA" href="#">+251 5675 4534</a></li>
+                    <li class= "contacts--list-item"><a class= "emaillogoA" href="#">bmd7@gmail.com</a> </li>
+                    
+                </ul>
+            </div>
+            
+             
+             <div class= "footer__end-navigators">
+    
+                    <a href="home.html#logo">GO TOP</a>|
+                    <a href="about.html">About</a>|
+                    <a href="contact.html">Help</a>|
+                    
+                    <div><p class= "endpara">&copy 2023 BMDsales</p></div>
+            </div>
+    
+            </div>
     </footer>
-        
 </body>
 </html>
