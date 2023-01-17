@@ -282,9 +282,21 @@
     
     .footer-big-div--bottom-logo{
    
-        width: 90px;
-        height: 90px;
+        display: none;
+        
     }
+    
+    .footer-big-div{
+        height: 180px;
+        font-size: x-large;
+
+    }
+    .live-in--paragraph {
+        font-size: 40px;
+    }
+
+
+
 }
 @media (max-width: 725px) {
     .live-in--heading{
@@ -362,10 +374,10 @@
         font-size: 10px;
     }
     .two-navigator-link{
-        font-size: 15px;
+        font-size: 20px;
     }
     .live-in--paragraph{
-        font-size: 12px;
+        font-size: 20px;
     } 
     .footer-big-div--bottom-log0{
    
@@ -389,15 +401,22 @@
         font-size: 7px;
     }
     .two-navigator-link{
-        font-size: 10px;
+        font-size: 15px;
     }
     .live-in--paragraph{
-        font-size: 10px;
+        font-size: 20px;
     } 
     .footer-big-div--bottom-logoottom_logo{
    
         width: 50px;
         height: 50px;
+    }
+    .other{
+        font-size: larger;
+        font-weight: 0;
+    }
+    .phoneA{
+        font-size: 16px;
     }
     .social_media{
     
@@ -405,7 +424,7 @@
     }
     .footer__end-navigators{
         
-        font-size: smaller;
+        font-size: 16px;
         
     }
     .live-in--heading{
