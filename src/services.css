@@ -257,6 +257,7 @@
 
 /* @media only screen and (min-width: 1000px){} */
 
+
 .navigator input, .navigator label p{
     display: none;
 }
@@ -392,18 +393,25 @@
     .first-six--link{
         font-size: 7px;
     }
+    .more-ads{
+        font-size: small;
+        text-align: start;
+
+    }
     .two-navigator-link{
         font-size: 10px;
     }
     .live-in--paragraph{
         font-size: 10px;
     } 
-    .footer-big-div--bottom-logoottom_logo{
+    .footer-big-div--bottom-logo{
    
-        width: 50px;
-        height: 50px;
+        display: none;
     }
-    .social_media{
+    .footer-big-div{
+        height: 180px;
+    }
+    .social-media{
     
         font-size: smaller;
     }
@@ -434,9 +442,7 @@
         font-size: 8px;
        
     }
-    /* .other{
-        font-size: 8px;
-    } */
+    
 
     .social-media--logo{
         width: 15px;
@@ -449,7 +455,7 @@
     .live-in--paragraph{
         font-size: 8px;
     } 
-    big-back--logo{
+    .big-back--logo{
         width: 30px;
         height: 30px;
     }
