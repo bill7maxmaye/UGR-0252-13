@@ -484,6 +484,13 @@
     .live-in--paragraph{
         font-size: 10px;
     }
+    .footer-big-div--bottom-logo{
+   
+        display: none;
+    }
+    .footer-big-div{
+        height: 180px;
+    }
 
 }
 @media (max-height: 450px){
