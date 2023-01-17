@@ -111,7 +111,6 @@
 .our-mission-and-image{
     display: flex;
     justify-content: space-around;
-    /* background-color: beige; */
     background-image: linear-gradient(rgb(3, 21, 32),rgb(45, 157, 217));
     padding: 20px;
     flex-wrap: wrap;
@@ -208,7 +207,7 @@
 
 }
 .bottom-img__div2{
-    /* margin-left: 50px; */
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -216,8 +215,6 @@
 .bottom-img__div--photo{
     width: 45%;
     height: 90%;
-    
-    /* margin-right: 20px; */
     justify-content: space-between;
    
 }
@@ -230,8 +227,8 @@
     color: white;
 
 }
-/* footer */
-/* footer */
+
+
 /* footer */
 .footer{
     flex-wrap: wrap;
@@ -239,14 +236,9 @@
 
 .footer-big-div{
     position: relative;
-    
     background:linear-gradient(180deg,rgb(14, 54, 70) 0%, rgb(42, 202, 223) 100%);
-    /* background-color: rgb(83, 125, 164); */
-    /* width: 100%; */
     height:300px;
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     flex-wrap: wrap;
 }
 .footer-big-div--bottom-logo{
@@ -271,12 +263,12 @@
     right: 40%;
     font-size: xx-large;
     flex-wrap: wrap;
-    /* max-width: 40%; */
+   
     
 
 }
 .social-media--list-item{
-    /* margin-bottom: 15px; */
+    
     display: inline-block;
     margin-right: 20px;
 }
@@ -350,9 +342,21 @@
     
     .footer-big-div--bottom-logo{
    
-        width: 90px;
-        height: 90px;
+        display: none;
+        
     }
+    
+    .footer-big-div{
+        height: 180px;
+        font-size: x-large;
+
+    }
+    .live-in--paragraph {
+        font-size: 40px;
+    }
+
+
+
 }
 @media (max-width: 725px) {
     .live-in--heading{
@@ -375,6 +379,27 @@
         margin-left: 20px;
         font-size: xx-large;
      }
+    .our-mission-and-image__mission--heading1{
+        font-size: 22px;
+    }
+    .our-mission-and-image__mission--heading2{
+        font-size: 16px;
+    }
+    .our-mission-and-image__mission--paragraph{
+        font-size: 14px;
+
+    }
+    .why-choose-us--heading1{
+        font-size: 22px;
+    }
+    .why-choose-us--paragraph{
+        font-size: 14px;
+    }
+    .bottom-img__div1--heading2{
+        font-size: small;
+    }
+
+
     .checkbt{
         display: block;
     }
@@ -411,15 +436,29 @@
         left: -1px;
     }
 } 
+@media (max-width: 610px){
+    .first-six--link{
+        font-size: 15px;
+    }
+    .two-navigator-link{
+        font-size: 20px;
+    }
+    
+    .footer-big-div--bottom-logo{
+   
+        width: 70px;
+        height: 70px;
+    }
+}
 @media (max-width: 490px){
     .first-six--link{
         font-size: 10px;
     }
     .two-navigator-link{
-        font-size: 15px;
+        font-size: 20px;
     }
     .live-in--paragraph{
-        font-size: 12px;
+        font-size: 20px;
     } 
     .footer-big-div--bottom-log0{
    
@@ -437,21 +476,32 @@
     .contacts{
         font-size: small;
     }
+    .body{
+        font-size: 18px;
+
+    }
 }
 @media (max-width: 377px){
     .first-six--link{
         font-size: 7px;
     }
     .two-navigator-link{
-        font-size: 10px;
+        font-size: 15px;
     }
     .live-in--paragraph{
-        font-size: 10px;
+        font-size: 20px;
     } 
     .footer-big-div--bottom-logoottom_logo{
    
         width: 50px;
         height: 50px;
+    }
+    .other{
+        font-size: larger;
+        font-weight: 0;
+    }
+    .phoneA{
+        font-size: 16px;
     }
     .social_media{
     
@@ -459,7 +509,7 @@
     }
     .footer__end-navigators{
         
-        font-size: smaller;
+        font-size: 16px;
         
     }
     .live-in--heading{
@@ -517,7 +567,7 @@
         font-size: 10px;
     }
     .live-in--paragraph{
-        font-size: 20px;
+        font-size: 10px;
     }
 
 }
@@ -530,13 +580,19 @@
         font-size: 15px;
 
     }
-} 
-@media (max-height: 362px){
+    .live-in--paragraph{
+        display: none;
+    }
+}   
+@media (max-height: 384px){
    
     .body{
-        font-size: 4px;
+        font-size: 5px;
     }
-}      
+    .two-navigators{
+        display: none;
+    }
+}   
 
 
 
