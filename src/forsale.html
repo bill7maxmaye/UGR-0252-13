@@ -5,196 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homes for sale</title>
+    <link rel="stylesheet" href="forsale.css">
    
 </head>
 <body>
 
     <header>
-        <div><img src="./images/logo.jpg" id="start" alt="" width="100px" height="100px"></div>
 
-        <nav>
-
-        <a href="home.html">HOME</a>|
-        <a href="about.html">ABOUT</a>|
-        <a href="contact.html">CONTACTS</a>|
-        <a href="services.html">SERVICES</a>|
-        <a href="login.html">LOG IN</a>|
-        <a href="maintenance.html">MAINTENANCE</a>|
-
-        <ul>
-            <li><a href="rental.html">RENTAL</a></li>
-            <li><a href="forsale.html">FOR SALE</a></li>
-        </ul>
-        <input type="text" placeholder="Search.." id="search"><label for="search">search</label>
+        <div class= "big-back">
             
-        </nav>
+            <div class= "logo">
+                <img src="./images/logo.jpg" class= "big-back--logo" alt="Home logo" >
+            </div>
+            <div class= "BMD">BMDsales</div>
+    
+            <nav class= "first-six navigator">
+                <input type="checkbox" id="check">
+        <label for="check" class= "checkbt"> <p>drop down menu</p>
+        <svg width="27px" height="28px">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+        </label>
+    
+            
+                
+              <ul class= "firt-six__unordered-list">
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="..index/.html">HOME</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="about.html">ABOUT</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="contact.html">CONTACTS</a></li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="services.html">SERVICES</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="login.html">LOG IN</a>|</li>
+                  <li class= "firt-six__list-item"><a class= "first-six--link" href="maintenance.html">SIGN UP</a>|</li>
+              </ul>
+          </nav>
+    
+    
+            <div class= "live-in">
         
-    </header>
-
+              <h1 class= "live-in--heading">FOR SALE</h1>
+           
+            </div>       
+        </div>
+       
+</header>
     <hr>
 
     <main>
-       <div><h1>For Sale</h1></div> 
+       
         
-      <form>
+      <form class= 'choice-forms' onsubmit="cityFilter(e)">
         <div>
-            <label for="cities1">Choose city</label>
-            <input list="A"  placeholder="CITIES" id="cities1">
+            <label class= "choice-form--label" for="cities1"> Choose City</label>
+            <input class= "choice-form--input" list="A"  placeholder="CITIES" id="cities">
         <datalist id="A">
-            <option value="In Addis Ababa"></option>
+            <option value="AA"></option>
             <option value="Hawassa"></option>
-            <option value="Dire Dawa"></option>
+            <option value="Diredawa"></option>
             <option value="Harari"></option>
         </datalist>
 
         </div>
         <hr>
 
-        <div>
-            <label for="price">Choose price range</label>
-            <input list="B"  placeholder="PRICE RANGE" id="price">
-        <datalist id="B">
-            <option value="200,000-300,000 Birr"></option>
-            <option value="400,000-500,000 Birr"></option>
-            <option value="600,000-700,000 Birr"></option>
-            <option value="800,000 Birr-Above"></option>
-        </datalist>
-        </div>
-        <hr>
-        <div>
-            <label for="cities2">Choose type</label>
-            <input list="C"  placeholder="CATEGORIES" id="cities2">
-        <datalist id="C">
-            <option value="One Bedroom"></option>
-            <option value="Two Bedroom"></option>
-            <option value="With Backyard"></option>
-            <option value="With Playground"></option>
-        </datalist>
-        <label for="search2">|</label>
-        <input type="text" placeholder="Search" id="search2">
+     
+        <button class= "choice-form--button">Search</button>
+      </form>
+      
+        <div class= "newly-listed"><h2>Explore Homes In Ethiopia</h2></div>
+
+      
+
+      
+
+      <div class= "container">
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 1.jpg" alt="sales home one">
+            <p class= "container__common--paragraph">Price 19,920,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">3ba</p>
+            <p class= "container__common--paragraph">4kilo, <span class= "city">AA</span></p>
+            <p class= "container__common--paragraph">Est.payment: 35,000/mo</p>
         </div>
         
-      </form>
-
-      <div><h2>Explore Homes In Ethiopia</h2></div>
-
-      <div>
-        <img src="./images/sales 1.jpg" alt="sales home one">
-        <section>
-            <p>Price 19,920,000 Birr</p>
-            <p>3bd</p>
-            <p>3ba</p>
-            <p>4kilo, AA</p>
-            <p>Est.payment: 35,000/mo</p>
-        </section>
-        <img src="./images/sales 2.jpg" alt="sales home two">
-        <section>
-            <p>Price 14,850,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>Goba, Hawassa</p>
-            <p>Est.payment: 15,000/mo</p>
-        </section>
-        <img src="./images/sales 3.jpg" alt="sales home three">
-        <section>
-            <p>6,450,000 Birr</p>
-            <p>2bd</p>
-            <p>2ba</p>
-            <p>Mera, Dire Dawa</p>
-            <p>Est.payment: 25,000/mo</p>
-        </section>
-        <img src="./images/sales 4.jpg" alt="sales home four">
-        <section>
-            <p>7,500,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>Dildiy, Harari</p>
-            <p>Est.payment: 20,000/mo</p>
-        </section>
-        <img src="./images/sales 5.jpg" alt="sales home five">
-        <section>
-            <p>7,600,000 Birr</p>
-            <p>2bd</p>
-            <p>2ba</p>
-            <p>kolfe, AA</p>
-            <p>Est.payment: 35,000/mo</p>
-        </section>
-        <img src="./images/sales 6.jpg" alt="sales home six">
-        <section>
-            <p>Price 9,200,000 Birr</p>
-            <p>2bd</p>
-            <p>2ba</p>
-            <p>5kilo, AA</p>
-            <p>Est.payment: 25,000/mo</p>
-        </section>
-        <img src="./images/sales 7.jpg" alt="sales home seven">
-        <section>
-            <p>Price 7,200,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>6kilo, AA</p>
-            <p>Est.payment: 15,000/mo</p>
-        </section>
-        <img src="./images/sales 8.jpg" alt="sales home eight">
-        <section>
-            <p>Price 5,920,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>Harushe, Harari</p>
-            <p>Est.payment: 3500/mo</p>
-        </section>
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 2.jpg" alt="sales home two">
+            <p class= "container__common--paragraph">Price 14,850,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">Goba, <span class= "city">Hawassa</span></p>
+            <p class= "container__common--paragraph">Est.payment: 15,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 3.jpg" alt="sales home three">
+            <p class= "container__common--paragraph">6,450,000 Birr</p>
+            <p class= "container__common--paragraph">2bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">Mera, <span class= "city">Diredawa</span></p>
+            <p class= "container__common--paragraph">Est.payment: 25,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 4.jpg" alt="sales home four">
+            <p class= "container__common--paragraph">7,500,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">Dildiy, <span class= "city">Harari</span></p>
+            <p class= "container__common--paragraph">Est.payment: 20,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 5.jpg" alt="sales home five">
+            <p class= "container__common--paragraph">7,600,000 Birr</p>
+            <p class= "container__common--paragraph">2bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">kolfe, <span class= "city">AA</span></p>
+            <p class= "container__common--paragraph">Est.payment: 35,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 6.jpg" alt="sales home six">
+            <p class= "container__common--paragraph">Price 9,200,000 Birr</p>
+            <p class= "container__common--paragraph">2bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">5kilo,<span class= "city">Harari</span></p>
+            <p class= "container__common--paragraph">Est.payment: 25,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 7.jpg" alt="sales home seven">
+            <p class= "container__common--paragraph">Price 7,200,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">6kilo, <span class= "city">AA</span></p>
+            <p class= "container__common--paragraph">Est.payment: 15,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 8.jpg" alt="sales home eight">
+            <p class= "container__common--paragraph">Price 5,920,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">Harushe, <span class= "city">Diredawa</span></p>
+            <p class= "container__common--paragraph">Est.payment: 3500/mo</p>
+        </div>
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 11.jpg" alt="sales home eleven">
+            <p class= "container__common--paragraph">Price 6,200,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">6kilo, <span class= "city">Hawassa</span></p>
+            <p class= "container__common--paragraph">Est.payment: 25,000/mo</p>
+        </div>
 
       </div>
-      <div><h2>Newly Listed Homes</h2></div>
-      <div>
-        <img src="./images/sales 9.jpg" alt="sales home nine">
-        <section>
-            <p>Price 4,820,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>Semayat, Hawassa</p>
-            <p>Est.payment: 15,000/mo</p>
-        </section>
-        <img src="./images/sales 10.jpg" alt="sales home ten">
-        <section>
-            <p>Price 5,920,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>4kilo, AA</p>
-            <p>Est.payment: 15,000/mo</p>
-        </section>
-        <img src="./images/sales 11.jpg" alt="sales home eleven">
-        <section>
-            <p>Price 6,200,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>6kilo, AA</p>
-            <p>Est.payment: 25,000/mo</p>
-        </section>
-        <img src="./images/sales 12.jpg" alt="sales home twelve">
-        <section>
-            <p>Price 6,920,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>Gejober, Dire Dawa</p>
-            <p>Est.payment: 15,000/mo</p>
-        </section>
-        <img src="./images/sales 13.jpg" alt="sales home thirteen">
-        <section>
-            <p>Price 5,720,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>4kilo, AA</p>
-            <p>Est.payment: 15000/mo</p>
-        </section>
-        <img src="./images/sales 14.jpg" alt="sales home fourteen">
-        <section>
-            <p>Price 7,720,000 Birr</p>
-            <p>3bd</p>
-            <p>2ba</p>
-            <p>03, Harari</p>
-            <p>Est.payment: 20,000/mo</p>
-        </section>
+
+      
+      <div class= "newly-listed"><h2>Newly Listed Homes</h2></div>
+      <div class= "container-2">
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 9.jpg" alt="sales home nine">
+            <p class= "container__common--paragraph">Price 4,820,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">Semayat, <span class= "city">AA</span></p>
+            <p class= "container__common--paragraph">Est.payment: 15,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 10.jpg" alt="sales home ten">
+            <p class= "container__common--paragraph">Price 5,920,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">4kilo,<span class= "city">Harari</span></p>
+            <p class= "container__common--paragraph">Est.payment: 15,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 11.jpg" alt="sales home eleven">
+            <p class= "container__common--paragraph">Price 6,200,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">6kilo, <span class= "city">Diredawa</span></p>
+            <p class= "container__common--paragraph">Est.payment: 25,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 12.jpg" alt="sales home twelve">
+            <p class= "container__common--paragraph">Price 6,920,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">Gejober, <span class= "city">AA</span></p>
+            <p class= "container__common--paragraph">Est.payment: 15,000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 13.jpg" alt="sales home thirteen">
+            <p class= "container__common--paragraph">Price 5,720,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">4kilo,<span class= "city">Hawassa</span></p>
+            <p class= "container__common--paragraph">Est.payment: 15000/mo</p>
+        </div>
+        
+        <div class= "container__common">
+            <img class= "container__common--photo" src="./images/sales 14.jpg" alt="sales home fourteen">
+            <p class= "container__common--paragraph">Price 7,720,000 Birr</p>
+            <p class= "container__common--paragraph">3bd</p>
+            <p class= "container__common--paragraph">2ba</p>
+            <p class= "container__common--paragraph">03, <span class= "city">Harari</span></p>
+            <p class= "container__common--paragraph">Est.payment: 20,000/mo</p>
+        </div>
 
       </div>
 
@@ -202,45 +227,53 @@
 </main>
 
 
-<footer>
+<footer class= "footer">
    
-
+    <div class= "footer-big-div">
+        <div class= "bottom_logo">
+            <img src="./images/logo.jpg" alt="House logo" class= "footer-big-div--bottom-logo" >
+    
+        </div>    
         
-    <img src="./images/logo.jpg" alt="House logo" width="100px" height="100px">
-    
-    <div>
-        <p>Follow us on</p>
-    <ul>
-        <li><img src="./images/facebook.jpg" alt="facebook logo"> <a href="#">Facebook</a></li>
-        <li><img src="./images/twitter.jpg" alt="twitter logo"> <a href="#">Twitter</a></li>
-        <li><img src="./images/Instagram.jpg" alt="Instagram logo"> <a href="#">Instagram</a></li>
-    
-    </ul>
-    
-    </div>
-     <div>
-    
-        <section>
-            <p>Find us</p>
-            <p>Contacts</p>
-        </section>
-        <ul>
-            <li><img src="./images/phone.jpg" alt="phone logo"> +251 5675 65443</li>
+        
+        <div class= "social-media">
             
-            <li><img src="./images/email.jpg" alt="email logo"> <a href="#">bilenmehalek7@gmail.com</a> </li>
+            <p >Follow us on</p>
+
+            <ul >
+
+                <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/facebook.jpg" alt="facebook logo"></li>
+                <li class= "social-media--list-item"><img class= "social-media--logo" src="./images/twitter.jpg" alt="twitter logo"> </li>
+                <li class= "social-media--list-item"><img class= "social-media--logo" src= "./images/Instagram.jpg" alt="Instagram logo"></li>
+            </ul>
             
-        </ul>
-     </div>
+        </div>
+        
     
-     <hr>
-     <div>
-     <a href="forsale.html#start">GO TOP</a>|
-     <a href="about.html">About</a>|
-     <a href="contact.html">Help</a>|
-     </div>
-     <div><p>&copy 2023 BMD home sales an rentals</p></div>
-    
+        <div class= "contacts">
+        
+            <p class= "other">Find us</p>
+            
+            <ul> 
+                <li class= "contacts--list-item"><a class= "phoneA" href="#">+251 5675 4534</a></li>
+                <li class= "contacts--list-item"><a class= "emaillogoA" href="#">bmd7@gmail.com</a> </li>
+                
+            </ul>
+        </div>
+        
+         
+         <div class= "footer__end-navigators">
+
+                <a href="home.html#logo">GO TOP</a>|
+                <a href="about.html">About</a>|
+                <a href="contact.html">Help</a>|
+                
+                <div><p class= "endpara">&copy 2023 BMDsales</p></div>
+        </div>
+
+        </div>
 </footer>
+  <script src="forsale.js"></script> 
     
 </body>
 </html>
