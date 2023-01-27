@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>LOG IN</title>
+  </head>
+  <body class= " m-0 border-0 bg-gradient">
+    
+    <nav class= "navbar navbar-expand-lg ">
+      <div class= "container-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/Moody-Noir.jpg); height:50vh;background-size: cover;
+      background-position: center ; width:100%; flex-wrap: wrap;">
+        <img src="./images/logo.jpg" class= " rounded-circle" alt="Home logo" style="width: 60px; height:60px;">
+        <a class= "navbar-brand text-info ms-2" style="font-weight: bolder; font-size: xx-large;" href="#">BMDsales</a>
+        <button class= "navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class= "navbar-toggler-icon bg-white"></span>
+        </button>
+        <div class= "collapse navbar-collapse  justify-content-end " id="navbarNav">
+          <ul class= "navbar-nav ">
+           
+            <li class= "nav-item">
+              <a class= "nav-link active fw-bold text-white" href="home.html">HOME</a>
+            </li>
+            <li class= "nav-item">
+              <a class= "nav-link active fw-bold text-white" href="about.html">ABOUT</a>
+            </li>
+            <li class= "nav-item">
+              <a class= "nav-link active fw-bold text-white" href="contact.html">CONTACTS</a>
+            </li>
+            <li class= "nav-item">
+              <a class= "nav-link active fw-bold text-white" href="services.html">SERVICES</a>
+            </li>
+            <li class= "nav-item">
+              <a class= "nav-link active fw-bold text-white" href="login.html">LOGIN</a>
+            </li>
+            <li class= "nav-item">
+              <a class= "nav-link active fw-bold text-white" href="#">SIGN UP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+   
+    <h2 class= "d-flex  justify-content-center mt-5 mb-5 text-info fw-bold">
+      Log In
+    </h2>
+
+    <main>
+      <form class= "container-fluid myForm  form-control was-validated"  id="form">
+       
+        <div class= "row d-flex justify-content-md-center has-validation">
+        <div class ="form-outline mb-4 col-md-3 ">
+          <input type="email" id="form2Example1" class= "form-control"/>
+          <label class= "form-label" for="form2Example1">Email address</label>
+          <div class= "invalid-feedback">
+            Please enter your email
+          </div>
+        </div>
+        
+      </div>
+       
+        <div class= "row d-flex justify-content-md-center has-validation">
+        <div class= "form-outline mb-4 col-md-3">
+          <input type="password" id="form2Example2" class= "form-control " />
+          <label class= "form-label" for="form2Example2">Password</label>
+          <div class= "invalid-feedback">
+            Enter your password
+
+          </div>
+          
+        </div>
+      </div>
+        
+        <div class= "row mb-4">
+          <div class= "col d-flex justify-content-end">
+           
+            <div class= "form-check ">
+              <input class= "form-check-input" type="checkbox" value="" id="form2Example34" checked />
+              <label class= "form-check-label" for="form2Example34"> Remember me </label>
+            </div>
+          </div>
+      
+          <div class= "col">
+            
+            <a href="#" onclick="return(forgot())">Forgot password? </a>
+          </div>
+        </div>
+      
+        
+        <div class= "d-flex justify-content-center">
+        <button type="submit" class= "btn btn-primary btn-block mb-4 " onsubmit="return(validate() )">Sign in</button>
+      </div>
+       
+        
+      </form>
+
+    </main>
+    
+ <footer aria-label="footer" class= " footer bg-dark text-center text-lg-start text-white container-fluid">
+    <div class= "row mt-4 justify-content-around p-5">
+      <div class= "col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class= "mx-5" >
+          <a href="index.html"><img src="./images/logo.jpg" class= " rounded-circle" alt="Home logo" style="width: 60px; height:60px;"></a>
+          <a href="index.html" class= "fs-3 text-white text-decoration-none"><span class="logo__name">BMD</span>sales</a>
+      </div>
+      </div>
+      <div class= "col-lg-3 col-md-6 mb-4 mb-md-0">
+        <p class= "text-white fs-3">FOLLOW US</p>
+        <div class= "facebook">
+          <a href="#"><img style="border-radius: 50%; width:30px; height:30px;" src="./images/facebook.jpg" alt="facebook logo"></a>
+          <div><a href="#" class= "text-white text-decoration-none ">Facebook</a></div>
+          <a href="#"><img style="border-radius: 50%; width:30px; height:30px;" src="./images/twitter.jpg" alt="twitter logo"></a>
+          <div><a href="#" class= "text-white text-decoration-none ">Twitter</a></div>
+          <a href="#"><img style="border-radius: 50%; width:30px; height:30px;" src="./images/Instagram.jpg" alt="instagram logo"></a>
+          <div><a href="#" class= "text-white text-decoration-none ">Instagram</a></div>
+        </div>
+       
+      </div>
+      <div class= " d-flex flex-column col-lg-3 col-md-6 mb-4 mb-md-0">
+        <p class= "text-white fs-3">QUICK LINKS</p>
+        <a href="about.html" class= "text-white text-decoration-none ">About</a>
+        <a href="contact.html" class= "text-white text-decoration-none ">Contacts</a>
+        <a href="services.html" class= "text-white text-decoration-none ">Services</a>
+        
+      </div>
+    </div>
+    <div class= "text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright &#169; BMDsales 2022</div>
+  </footer>
+   <script src="bootstrap.js"></script>
+  <script src="login.js"></script>
+    </body>
+  </html>
